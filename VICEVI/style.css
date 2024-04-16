@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.container {
+  text-align: center;
+}
+
+.setup {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.punchline {
+  font-size: 2rem;
+  display: none;
+  color: #4CAF50;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.punchline:hover {
+  color: #388e3c;
+}
+
+.container:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
